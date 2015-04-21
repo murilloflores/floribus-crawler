@@ -60,6 +60,7 @@ def get_timetables(tree):
 
     for timetable_div in timetable_divs:
         timetable = timetable_div.xpath('.//a/text()[1]')
+        timetable.sort()
 
         day_kind = timetable_div.xpath('.//div[2]')[0].get('data-semana')
 
