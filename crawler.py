@@ -53,7 +53,7 @@ def get_timetables(tree):
     
     timetables = collections.defaultdict(dict)
 
-    timetable_divs = tree.xpath('//*[@id="conteudo"]/div/div[1]/div')
+    timetable_divs = tree.xpath('//*[@id="conteudo"]/div/div[1]/div[@class="row"]')
     
     # The first one contains only additional info, so we remove it
     timetable_divs = timetable_divs[1:]
